@@ -26,6 +26,7 @@
     <string name="share_text">A must read book: </string>
     <string name="no_internet_connection">No internet connection found</string>
     <string name="low_storage_error">Barcode scanner dependencies cannot be downloaded due to low device storage</string>
+    <string name="book_search_error">We encountered an error while searching for the book. Please try again later.</string>
 
 <!-- TODO: Remove or change this placeholder text -->
     <string name="about_text">This application gets book information from a Google API. All titles, cover images, and author information come from there.

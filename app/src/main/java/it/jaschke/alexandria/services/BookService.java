@@ -155,6 +155,14 @@ public class BookService extends IntentService {
 
         }
 
+        // If failed to get json return and notify user
+        if(bookJsonString == null) {
+            Intent messageIntent = new Intent(MainActivity.MESSAGE_EVENT);
+            messageIntent.putExtra(MainActivity.MESSAGE_KEY,getResources().getString(R.string.book_search_error));
+            LocalBroadcastManager.getInstance(getApplicationContext()).sendBroadcast(messageIntent);
+            return;
+        }
+
         final String ITEMS = "items";
 
         final String VOLUME_INFO = "volumeInfo";
